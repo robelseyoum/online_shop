@@ -68,6 +68,7 @@ class Categories
         return $data;
     }
 
+
     /**
      * undocumented class variable
      *
@@ -75,6 +76,7 @@ class Categories
      **/
 
     public function create_category_nav($active = NULL){
+        
         //get all categories
         $categories = $this->get_categories();
 

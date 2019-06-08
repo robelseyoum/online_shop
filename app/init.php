@@ -42,5 +42,5 @@ require_once 'app/models/m_cart.php';
 // create objects
 $Template = new Template();
 $Categories = new Categories();
-// $Products = new Products();
+$Products = new Products();
 // $Cart = new Cart();
