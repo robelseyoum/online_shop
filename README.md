@@ -3,5 +3,5 @@
 PHP Shopping Cart with PayPal, OOP & MVC
 Without using framework.
 
-It is build with PHP based shopping cart that uses object oriented techniques 
+Build with PHP based shopping cart and by using object oriented techniques 
 and follows the Model View Controller pattern.
