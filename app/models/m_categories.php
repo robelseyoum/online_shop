@@ -76,7 +76,7 @@ class Categories
      **/
 
     public function create_category_nav($active = NULL){
-        
+
         //get all categories
         $categories = $this->get_categories();
 
@@ -84,22 +84,25 @@ class Categories
         //set up 'all' item
         $data = '<li';
 
-        if($active == strtolower('home')){
+        if($active == strtolower('home'))
+        {
             $data .= ' class="active"';
         }
 
-        $data .='> <a href="'.SITE_PATH. '">View All </a></li>';
+        $data .='><a href="'.SITE_PATH. '">View All </a></li>';
 
 
         //loop through each category
-        if(! empty($categories)){
-            foreach ($categories as $category) {
+        if(! empty($categories))
+        {
+            foreach ($categories as $category) 
+            {
                 $data .='<li';
                 if(strtolower($active) == strtolower($category['name']))
                 {
-                    $data .='class="active';
+                    $data .=' class="active"';
                 }
-                $data .='> <a href="'.SITE_PATH. 'index.php?id='.$category['id'].'">'.$category['name'].'</a></li>';
+                $data .='><a href="'.SITE_PATH. 'index.php?id='.$category['id'].'">'.$category['name'].'</a></li>';
             }
         }
         

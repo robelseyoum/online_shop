@@ -23,5 +23,3 @@
 
             <?php $this->get_data('page_nav'); ?>
         </ul>
-</body>
-</html>
