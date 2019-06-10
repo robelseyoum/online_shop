@@ -98,23 +98,49 @@ body{
     list-style: none;
     overflow: hidden;
 }
-    #content .products li {
-        float: left;
-        margin: 0 10px 30px 0;
-    }
 
-    #content .products li.last {
-        margin-right: 0;
-    }
-    
-    #content .products li img {
-        border: 1px solid #ccc;
-        margin-bottom: 4px;
-    }
-    
-    #content .products li strong{
-        font-size: 14px;
-    }
+#content .products li {
+    float: left;
+    margin: 0 10px 30px 0;
+}
+
+#content .products li.last {
+    margin-right: 0;
+}
+
+#content .products li img {
+    border: 1px solid #ccc;
+    margin-bottom: 4px;
+}
+
+#content .products li strong{
+    font-size: 14px;
+}
+
+/* Product Page Styles */
+
+.product #content .product_image {
+    float: left;
+    margin: 0 40px 40px 0;
+    border: 1px solid #ccc;
+}
+
+.product #content h2 {
+    font-size: 22px;
+    margin: 10px 0 2px 0;
+}
+
+.product #content .price {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: green;
+    font-size: 16px;
+}
+
+.product #content .description {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
 
 
 /* Button Sytles  */

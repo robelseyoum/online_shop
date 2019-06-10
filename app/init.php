@@ -21,7 +21,7 @@ ini_set('display_errors', 1);
 // set up constants
 define('SITE_NAME', 'My Online Store');
 define('SITE_PATH', 'http://killersite.test/online_shop/online-shoping/');
-define('IMAGE_PATH', 'http://killersite.test/phpcartoopmvc1/phpcartoopmvc-empty/resources/images/');
+define('IMAGE_PATH', 'http://killersite.test/online_shop/online-shoping/resources/images/');
 
 define('SHOP_TAX', '0.0875');
 

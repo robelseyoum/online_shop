@@ -2,6 +2,8 @@
 
 require_once 'app/init.php'; 
 
+$Template->set_data('page_class', 'home');
+
     if(isset($_GET['id']) && is_numeric($_GET['id']))
     {
         //get products from specfic category
@@ -15,7 +17,7 @@ require_once 'app/init.php';
             $category_nav = $Categories->create_category_nav($category['name']);
             $Template->set_data('page_nav', $category_nav);
 
-            //get all products from that category
+            //get all products from that category example from product table with category_id = ?
             $cat_products = $Products->create_product_table(4,$_GET['id']);
 
             if(! empty($cat_products))

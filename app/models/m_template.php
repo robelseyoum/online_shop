@@ -102,11 +102,6 @@ class Template {
 
 
 
-
-
-
-
-
 }
 
  ?>

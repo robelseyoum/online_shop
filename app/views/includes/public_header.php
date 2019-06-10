@@ -5,8 +5,9 @@
     <title><?php $this->get_data('page_title'); ?></title>
     
     <link href="resources/css/style.css" rel="stylesheet" media="all" type="text/css">
+    
 </head>
-<body class="">
+<body class="<?php $this->get_data('page_class'); ?>">
     
     <div id="wrapper">
 
