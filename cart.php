@@ -23,8 +23,7 @@ if(isset($_GET['id']) && is_numeric($_GET['id']))
     else
     {
         $Cart->add($_GET['id']);
-         $Template->set_alert('Items has been added to the cart');
-
+        $Template->set_alert('Items has been added to the cart');
     }
 
     /*echo "<pre>";
@@ -42,6 +41,9 @@ if(isset($_GET['empty']))
     $Template->redirect(SITE_PATH.'cart.php');
 }
 
+//get items in cart
+$display = $Cart->create_cart();
+$Template->set_data('cart_rows', $display);
 
 //get category nav
 $category_nav = $Categories->create_category_nav();

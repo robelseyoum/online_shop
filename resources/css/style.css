@@ -245,28 +245,16 @@ body{
             width: 100px;
         }
 
-    .shoppingcart .buttons_row {
 
+    .shoppingcart .buttons_row { 
         position: relative;
-        top: -101px;
-    
+        top: -60px;
     }
 
     .shoppingcart .submit_row {
         float: right;
         margin: 10px 0 30px;
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

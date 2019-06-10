@@ -31,6 +31,34 @@ class Products
 
         if(is_array($id)){
             //get products based on arrays of ids
+            // get products based on array of ids
+            $items = '';
+            foreach ($id as $item)
+            {
+                if ($items != '') 
+                { 
+                    $items .= ','; 
+                }
+                $items .= $item;
+            }
+            //the above code it takes nums and convert them into string separted by comma, eg 1,2,4,7
+            if ($result = $this->Database->query("SELECT id, name, description, price, image FROM $this->db_table WHERE id IN ($items) ORDER BY name"))
+            {
+                if ($result->num_rows > 0)
+                {
+                    while ($row = $result->fetch_array())
+                    {
+                        $data[] = array(
+                            'id' => $row['id'],
+                            'name' => $row['name'],
+                            'description' => $row['description'],
+                            'price' => $row['price'],
+                            'image' => $row['image'],
+                            //'quantity' => $_SESSION['cart'][ $row['id'] ]
+                            );
+                    }
+                }
+            }
 
         }
         else if ($id != NULL){

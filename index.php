@@ -42,7 +42,7 @@ $Template->set_data('page_class', 'home');
     {
         // get all products from all categories
 
-        //get category nav
+        // get category nav
         $category_nav = $Categories->create_category_nav('home');
         $Template->set_data('page_nav', $category_nav);
 
