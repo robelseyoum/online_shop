@@ -1,23 +1,28 @@
 PROJECT ROADMAP:
 
 
+
 COMPLETED:
--- Introduction ---- done
--- Set up file structure ---- done
--- Set up database, fill with content ---- done
--- Set up init file, add connection to the database ---- done
--- Set up basic HTML ---- done
--- Set up basic CSS ---- done
--- Discuss MVC and OOP ---- done
--- Discuss coding style guide ---- done
--- Create the Template object ---- done
--- Create the Categories object so we can set up the navigation ---- done
--- Work on the Products object, so we can display a list of all products ---- done
--- Allow products to be sorted into categories ---- done
--- Create the products detail view
+-- Introduction 
+-- Set up file structure 
+-- Set up database, fill with content 
+-- Set up init file, add connection to the database 
+-- Set up basic HTML 
+-- Set up basic CSS 
+-- Discuss MVC and OOP 
+-- Discuss coding style guide 
+-- Create the Template object 
+-- Create the Categories object so we can set up the navigation 
+-- Work on the Products object, so we can display a list of all products 
+-- Allow products to be sorted into categories 
+-- Create the products detail view 
 -- Build out the cart page
 -- Create cart object, so items can be added to the cart
 -- Add ability to remove all products in cart
+
+
+
+TO DO:
 -- Display products in the cart
 -- Add ability to remove/change number of products in cart
 -- Build out ability to display # of items/cost of items in cart in the page header

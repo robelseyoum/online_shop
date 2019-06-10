@@ -43,4 +43,6 @@ require_once 'app/models/m_cart.php';
 $Template = new Template();
 $Categories = new Categories();
 $Products = new Products();
-// $Cart = new Cart();
+$Cart = new Cart();
+
+session_start();
